@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 30px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      label, input {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      input[type="text"], input[type="email"], input[type="tel"] {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 0 2px #f2f2f2, 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+      input[type="submit"] {
+        font-size: 18px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form action="/register" method="post">
+      <label for="full_name">Full Name:</label>
+      <input type="text" id="full_name" name="full_name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone_number">Phone Number:</label>
+      <input type="tel" id="phone_number" name="phone_number" required>
+      <input type="submit" value="Register">
+    </form>
+  </body>
+</html>

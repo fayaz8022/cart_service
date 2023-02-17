@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Verify Random String</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 30px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      }
+      label, input {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      input[type="text"] {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 0 2px #f2f2f2, 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+      input[type="submit"] {
+        font-size: 18px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Verify Random String</h1>
+    <form action="/verify" method="post">
+      <label for="random_string">Random String:</label>
+      <input type="text" id="random_string" name="random_string" required>
+      <input type="submit" value="Verify">
+    </form>
+  </body>
+</html>
