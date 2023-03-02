@@ -1,3 +1,7 @@
 Flask==2.2.3
 SQLAlchemy==2.0.3
+<<<<<<< HEAD
 boto3==1.26.73
+=======
+boto3==1.26.73
+>>>>>>> edfe30c (updated requriments)
